@@ -1,0 +1,24 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "burger devourer app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sornwill/burger.git"
+  },
+  "author": "William Sorn",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/sornwill/burger/issues"
+  },
+  "homepage": "https://github.com/sornwill/burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "mysql": "^2.18.1"
+  }
+}
