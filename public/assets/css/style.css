@@ -1,3 +1,8 @@
+body {
+  background-color: white;
+  color: black;
+}
+
 li {
     padding: 5px;
     margin: 5px;
@@ -18,3 +23,19 @@ li {
     margin-bottom: 5px;
   }
   
+  .create-form, h2, h1 {
+    text-align: center;
+  }
+
+  .create-form {
+    background-color: red;
+    color: white;
+    border-radius: 10%;
+    padding: 25px;
+    margin-left: 400px;
+    margin-right: 400px;
+  }
+
+  #bold {
+    font-weight: bold;
+  }

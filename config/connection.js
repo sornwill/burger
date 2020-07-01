@@ -1,7 +1,7 @@
 const mysql = require("mysql");
 
 const connection = mysql.createConnection({
-    host:"localhost",
+    host:"localhost", //CAN REPLACE WITH VARS ON HEROKU w/ process.env.SOMETHING
     port: 3306,
     user:"root",
     password:"22087005552493",
