@@ -3,7 +3,7 @@
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
-      {{burgers}}
+     <div>{{burgers}}</div> 
     {{/unless}}
   {{/each}}
 </ul>
@@ -13,7 +13,7 @@
 <ul>
   {{#each burgers}}
     {{#if devoured}}
-      {{burgers}}
+      <div>{{burgers}}</div>
     {{/if}}
   {{/each}}
 </ul>
@@ -38,22 +38,3 @@
 
 
 
-
-<!-- CALLS TO SQL AND ADDS SUBMISSIONS TO DATABASE -->
-
-<h2>Add a Burger</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
-  </div>
-
-  <div class="form-group">
-    <label for="devoured">Devour??</label><br>
-    <input type="radio" name="devoured" value="1" checked> Devour!<br>
-    <input type="radio" name="devoured" value="0"> Save it!
-  </div>
-
-  <button type="submit">Add Burger</button>
-</form>
