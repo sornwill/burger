@@ -7,8 +7,11 @@
     <!-- TO BE EATEN -->
         <ul>
           {{#each burgers}}
+          {{#unless devoured}}
           <!-- IF DEVOURED = FALSE -->
             <div id="bold">{{burger_name}}</div>
+            <button id="{{id}}" type = "button" class="btn">DEVOUR</button>
+          {{/unless}}
           {{/each}}
         </ul>
   </div>
