@@ -10,7 +10,7 @@
               {{#unless devoured}}
               <li class="list-group-item">
               {{burger_name}}
-              <button id="{{id}}" type="button" class="eat btn btn-outline-warning">DEVOUR</button>
+              <button id="{{id}}" type="button" class="devour btn btn-outline-warning">DEVOUR</button>
               {{/unless}}
             {{/each}}
           </ul>
@@ -21,7 +21,7 @@
           <ul>
             {{#each burgers}}
               {{#if devoured}}
-               <li class="devour list-group-item">
+               <li class="devoured list-group-item">
                {{burger_name}}
               {{/if}}
             {{/each}}
