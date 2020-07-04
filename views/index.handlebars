@@ -9,7 +9,7 @@
           {{#each burgers}}
           {{#unless devoured}}
           <!-- IF DEVOURED = FALSE -->
-            <div id="bold">{{burger_name}}</div>
+            <div id="bold">{{id}}.{{burger_name}}</div>
             <button id="{{id}}" type = "button" class="btn">DEVOUR</button>
           {{/unless}}
           {{/each}}
@@ -22,7 +22,7 @@
           {{#each burgers}}
           {{#if devoured}}
             <!-- IF DEVOURED = TRUE -->
-            <div id="bold">{{burger_name}}</div>
+            <div id="bold">{{id}}.{{burger_name}}</div>
           {{/if}}
           {{/each}}
         </ul>
