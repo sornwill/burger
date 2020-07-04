@@ -20,8 +20,10 @@
         <!-- DEVOURED CATEGORY -->
         <ul>
           {{#each burgers}}
+          {{#if devoured}}
             <!-- IF DEVOURED = TRUE -->
             <div id="bold">{{burger_name}}</div>
+          {{/if}}
           {{/each}}
         </ul>
   </div>
