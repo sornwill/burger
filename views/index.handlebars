@@ -1,23 +1,29 @@
-<h1>Burgers</h1>
+<h1>Devour the Burgers</h1>
 
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-     <div>{{burger_name}}</div> 
-    {{/unless}}
-  {{/each}}
-</ul>
+<div class = "container">
+  <div class = "row">
+    <div class = "col-6">
+          <ul>
+            {{#each burgers}}
+              {{#unless devoured}}
+              <div>{{burger_name}}</div> 
+              {{/unless}}
+            {{/each}}
+          </ul>
+    </div>
+    <div class = "col-6">
+          <h2>DEVOURED</h2>
 
-<h2>DEVOURED</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      <div>{{burger_name}}</div>
-    {{/if}}
-  {{/each}}
-</ul>
-
+          <ul>
+            {{#each burgers}}
+              {{#if devoured}}
+                <div>{{burger_name}}</div>
+              {{/if}}
+            {{/each}}
+          </ul>
+    </div>
+  </div>
+</div>
 <h2>Add Burger</h2>
 <form class="create-form">
 
