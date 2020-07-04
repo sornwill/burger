@@ -12,4 +12,5 @@ $(function() {
         );
     });
   });
-  
+
+  // ADD BURGER FUNCTION HERE
